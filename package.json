@@ -4,7 +4,7 @@
   "description": "## Instroduction",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Jwilliams85/webtesting-i-challenge/issues"
   },
-  "homepage": "https://github.com/Jwilliams85/webtesting-i-challenge#readme"
+  "homepage": "https://github.com/Jwilliams85/webtesting-i-challenge#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^26.5.2"
+  }
 }
