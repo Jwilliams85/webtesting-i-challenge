@@ -1,8 +1,10 @@
+
+// test away!
+
 const {succeed} = require('./enhancer.js');
 const {fail} = require('./enhancer.js');
 const {repair} = require('./enhancer.js');
 const {get} = require('./enhancer.js');
-// test away!
 
 
 describe("fail", () => {
@@ -32,9 +34,9 @@ describe("enhancer", ()=> {
     
     describe("get", () => {
         it("should apply the proper prefix to an item's name", () => {
-            const testItem = {enhancement: 22, name: "Iron Sword"};
+            const testItem = {enhancement: 7, name: "Iron Sword"};
             const newItem = get(testItem)
-            expect(newItem.name).toBe("[+22] Iron Sword");
+            expect(newItem.name).toBe("[+7] Iron Sword");
         })
     })
 })
